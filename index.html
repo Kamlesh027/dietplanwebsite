@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Plan Generator</title>
+</head>
+<body>
+    <h1>Meal Plan Generator</h1>
+
+    <form id="meal-plan-form">
+        <label for="num-of-meals">Number of Meals:</label>
+        <select id="num-of-meals" name="num-of-meals">
+            <option value="2">Two Meals</option>
+            <option value="3">Three Meals</option>
+            <option value="5">Five Meals</option>
+        </select>
+
+        <label for="diet-preference">Diet Preference:</label>
+        <select id="diet-preference" name="diet-preference">
+            <option value="balanced">Balanced</option>
+            <option value="low-carb">Low-Carb</option>
+            <option value="low-fat">Low-Fat</option>
+        </select>
+
+        <label for="health-specification">Health Specification:</label>
+        <select id="health-specification" name="health-specification">
+            <option value="vegan">Vegan</option>
+            <option value="vegetarian">Vegetarian</option>
+            <option value="alcohol-free">Alcohol-Free</option>
+            <option value="peanut-free">Peanut-Free</option>
+        </select>
+
+        <label for="calories">Calories:</label>
+        <input type="number" id="calories" name="calories" min="0" step="100">
+
+        <button type="button" id="generate-plan">Generate Meal Plan</button>
+    </form>
+
+    <!-- Display the meal plan here -->
+    <div id="meal-plan-results"></div>
+
+    <script>
+        // JavaScript for handling meal plan generation will go here
+    </script>
+</body>
+</html>
